@@ -1,0 +1,45 @@
+# Fichiers Python compilés
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Configuration et variables d'environnement
+.env
+.env.*
+
+# Base de données SQLite
+*.db
+*.sqlite
+*.sqlite3
+
+# Fichiers de sauvegarde
+*.bak
+*.backup
+
+# Visual Studio Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# Fichiers temporaires
+*.log
+*.tmp
+*.temp
+
+# Fichiers système Windows
+Thumbs.db
+Desktop.ini
+
+# Fichiers système macOS
+.DS_Store
+
+# Couverture de tests
+.coverage
+htmlcov/
+.pytest_cache/
