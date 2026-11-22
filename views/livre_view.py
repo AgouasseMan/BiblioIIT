@@ -1,9 +1,9 @@
 from models.livre import Livre
-from services.livre_service import LivreService
+from controllers.livre_controllers import LivreControllers
 from views.affichage import afficher_livres
 
 def menu_livres(db):
-    service = LivreService(db)
+    service = LivreControllers(db)
     while True:
         print("\\n--- GESTION DES LIVRES ---")
         print("1. Ajouter  2. Lister  3. Rechercher  4. Supprimer  5. Modifier quantité  0. Retour")

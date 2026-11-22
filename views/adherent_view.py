@@ -1,9 +1,9 @@
 from models.adherent import Adherent
-from services.adherent_service import AdherentService
+from controllers.adherent_controllers import AdherentControllers
 from views.affichage import afficher_adherents
 
 def menu_adherents(db):
-    service = AdherentService(db)
+    service = AdherentControllers(db)
     while True:
         print("\\n--- GESTION DES ADHÉRENTS ---")
         print("1. Inscrire  2. Lister  3. Rechercher  4. Suspendre/Réactiver  0. Retour")

@@ -1,9 +1,9 @@
-from services.emprunt_service import EmpruntService
-from services.retour_service import RetourService
+from controllers.emprunt_controllers import EmpruntControllers
+from controllers.retour_controllers import RetourControllers
 
 def menu_emprunts(db):
-    emprunts = EmpruntService(db)
-    retours = RetourService(db)
+    emprunts = EmpruntControllers(db)
+    retours = RetourControllers(db)
     while True:
         print("\\n--- EMPRUNTS ET RETOURS ---")
         print("1. Enregistrer un emprunt  2. Voir les emprunts en cours")
